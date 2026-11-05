@@ -1,0 +1,13 @@
+name: ERR-9042 Drill Fail
+
+on:
+  workflow_dispatch:
+
+jobs:
+  drill-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print drill code
+        run: |
+          echo "DRILL CODE: ERR-9042"
+          exit 1
